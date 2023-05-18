@@ -1,11 +1,12 @@
 import { NextPage } from "next";
 import Layout from "../../src/layout/Layout";
 import Contact from "@/components/Contact";
+import Hero from "@/components/Hero";
 
 const Home: NextPage = () => {
   return (
     <Layout>
-      <div>Hero</div>
+      <Hero />
       <div>Projects</div>
       <div>Skills</div>
       <div>About Me</div>
