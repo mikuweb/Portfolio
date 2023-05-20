@@ -3,13 +3,14 @@ import Layout from "../../src/layout/Layout";
 import Contact from "@/components/Contact";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
+import Skills from "@/components/Skills";
 
 const Home: NextPage = () => {
   return (
     <Layout>
       <Hero />
       <Projects />
-      <div>Skills</div>
+      <Skills />
       <div>About Me</div>
      <Contact />
     </Layout>
