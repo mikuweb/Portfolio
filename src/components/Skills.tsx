@@ -6,12 +6,12 @@ const Skills = () => {
   return (
     <div
       id="skills"
-      className="border-2 h-auto max-w-4xl mx-auto flex flex-col items-center relative overflow-hidden"
+      className="border-2 text-slate-700 h-screen max-w-4xl mx-auto flex flex-col items-center relative overflow-hidden"
     >
       <h2 className="font-bold text-5xl p-14 ">Skills</h2>
       {/* eslint-disable-next-line react/no-unescaped-entities */}
       <p className="mb-4">These are the technologies I've worked with</p>
-      <div className="border-2 w-4/5 mx-auto grid grid-cols-3 md:grid-cols-4 gap-8 text-center">
+      <div className="border-2 w-4/5 mx-auto grid grid-cols-3 md:grid-cols-4 gap-8 md:gap-10 text-center">
         {techs.map(({ title, image, color, id }) => (
           <div
             key={id}

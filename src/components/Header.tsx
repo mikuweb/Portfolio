@@ -8,9 +8,9 @@ const Header = () => {
   const handleNav = () => {
     setNav(!nav);
   };
-
+  // TODO: how to apply scroll-smooth?
   return (
-    <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4">
+    <div className="bg-white text-slate-700 flex justify-between items-center h-24 w-full mx-auto px-4 md:px-32">
       <Link href="/">
         <div className="w-full text-3xl font-bold">LOGO</div>
       </Link>
@@ -24,7 +24,7 @@ const Header = () => {
         <li className="py-2 px-4">
           <Link href="#aboutme">About Me</Link>
         </li>
-        <li className="py-2 px-4 border-2 rounded-lg">
+        <li className="py-2 px-4 rounded-lg bg-blue-200">
           <Link href="#contact">Contact</Link>
         </li>
       </ul>
@@ -39,10 +39,14 @@ const Header = () => {
         }
       >
         <h1 className="w-full text-3xl font-bold m-4">LOGO</h1>
-        <li className="p-4 border-b">Projects</li>
-        <li className="p-4 border-b">Skills</li>
-        <li className="p-4 border-b">About</li>
-        <li className="py-4"><span className="border-2 py-2 px-4 rounded-lg">Contact</span></li>
+        <li className="p-4 text-lg ">Projects</li>
+        <li className="p-4 text-lg ">Skills</li>
+        <li className="p-4 text-lg ">About</li>
+        <li className="py-4">
+          <span className="py-2 px-4 text-lg rounded-lg bg-blue-200">
+            Contact
+          </span>
+        </li>
       </ul>
     </div>
   );

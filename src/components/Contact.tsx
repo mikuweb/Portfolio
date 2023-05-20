@@ -3,7 +3,7 @@ import React from "react";
 import { AiFillGithub, AiFillLinkedin, AiFillInstagram } from "react-icons/ai";
 const Contact = () => {
   return (
-    <div className="flex justify-center items-center">
+    <div className="text-slate-700 flex justify-center items-center">
       <a
         className="transition duration-300 ease-in-out  rounded-full p-2 hover:bg-gray-700 cursor-pointer"
         href="https://google.com"

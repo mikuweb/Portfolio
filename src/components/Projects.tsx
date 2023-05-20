@@ -8,7 +8,7 @@ const Projects = () => {
     // Section container
     <div
       id="projects"
-      className="border-2 h-auto max-w-4xl mx-auto flex flex-col items-center relative overflow-hidden"
+      className="border-2 text-slate-700 h-auto max-w-4xl mx-auto flex flex-col items-center relative overflow-hidden"
     >
       <h2 className="font-bold text-5xl p-14 ">Projects</h2>
       {/* Cards container */}
