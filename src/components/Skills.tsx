@@ -6,7 +6,7 @@ const Skills = () => {
   return (
     <div
       id="skills"
-      className="border-2 text-slate-700 h-screen max-w-4xl mx-auto flex flex-col items-center relative overflow-hidden"
+      className="border-2 text-slate-600 md:h-screen max-w-4xl mx-auto flex flex-col items-center relative overflow-hidden"
     >
       <h2 className="font-bold text-5xl p-14 ">Skills</h2>
       {/* eslint-disable-next-line react/no-unescaped-entities */}

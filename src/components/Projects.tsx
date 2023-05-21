@@ -8,7 +8,7 @@ const Projects = () => {
     // Section container
     <div
       id="projects"
-      className="border-2 text-slate-700 h-auto max-w-4xl mx-auto flex flex-col items-center relative overflow-hidden"
+      className="border-2 text-slate-600 h-auto max-w-4xl mx-auto flex flex-col items-center relative overflow-hidden"
     >
       <h2 className="font-bold text-5xl p-14 ">Projects</h2>
       {/* Cards container */}
@@ -26,7 +26,7 @@ const Projects = () => {
             {/* Contents */}
             <div className="border-2 p-5 md:p-7 gap-3 flex flex-col items-center">
               <p className="text-2xl font-bold">{project.title}</p>
-              <span className="w-12 h-1 my-3 border-none bg-sky-200"></span>
+              <span className="w-12 h-1 my-3 border-none bg-sky-200 rounded-full"></span>
               <p>{project.description}</p>
               <div className="font-bold">Stack</div>
               <div className="w-full flex justify-around">

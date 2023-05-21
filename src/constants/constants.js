@@ -110,11 +110,11 @@ export const aboutMe = [
   {
     title: "Life Adventurer",
     sentence:
-      "I've lived and traveled to various places, embracing diverse experiences.",
+      "I've traveled and lived in various places, embracing diverse experiences.",
       id: 2,
     },
   {
-    title: "Passionate Pursuits",
+    title: "Love",
     sentence: "Piano, fitness, exploration, reading, cooking, travel, and dogs",
     id: 3,
   },
