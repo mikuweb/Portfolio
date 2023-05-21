@@ -20,7 +20,7 @@ const About = () => {
           </div>
           {/* Right About me */}
           <div className="border-2 p-4 w-full md:w-3/5 flex flex-col justify-center">
-            <ul className="[&>*:not(:last-child)]:mb-4">
+            <ul className="[&>*:not(:last-child)]:mb-6">
               {aboutMe.map(({ title, sentence, id }) => (
                 <li key={id}>
                   <p className="text-lg md:text-2xl font-semibold mb-1">{title}</p>

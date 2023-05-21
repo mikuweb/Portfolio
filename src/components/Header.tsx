@@ -22,7 +22,7 @@ const Header = () => {
           <Link href="#skills">Skills</Link>
         </li>
         <li className="py-2 px-4">
-          <Link href="#aboutme">About Me</Link>
+          <Link href="#about">About Me</Link>
         </li>
         <li className="py-2 px-4 rounded-lg bg-blue-100">
           <Link href="#contact">Contact</Link>
