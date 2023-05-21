@@ -24,7 +24,7 @@ const Header = () => {
         <li className="py-2 px-4">
           <Link href="#aboutme">About Me</Link>
         </li>
-        <li className="py-2 px-4 rounded-lg bg-blue-200">
+        <li className="py-2 px-4 rounded-lg bg-blue-100">
           <Link href="#contact">Contact</Link>
         </li>
       </ul>
@@ -43,7 +43,7 @@ const Header = () => {
         <li className="p-4 text-lg ">Skills</li>
         <li className="p-4 text-lg ">About</li>
         <li className="py-4">
-          <span className="py-2 px-4 text-lg rounded-lg bg-blue-200">
+          <span className="py-2 px-4 text-lg rounded-lg bg-blue-100">
             Contact
           </span>
         </li>

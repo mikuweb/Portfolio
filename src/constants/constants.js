@@ -93,3 +93,29 @@ export const techs = [
     id: 8,
   },
 ];
+
+export const aboutMe = [
+  {
+    title: "Lifelong Learner",
+    sentence:
+      "With a lifelong learner mindset, I fuel my growth as a web developer by continuously seeking knowledge and improvement.",
+    id: 0,
+  },
+  {
+    title: "Exceptional Communicator",
+    sentence:
+      "Years of sales, secretarial, and customer service experience honed my communication skills.",
+      id: 1,
+    },
+  {
+    title: "Life Adventurer",
+    sentence:
+      "I've lived and traveled to various places, embracing diverse experiences.",
+      id: 2,
+    },
+  {
+    title: "Passionate Pursuits",
+    sentence: "Piano, fitness, exploration, reading, cooking, travel, and dogs",
+    id: 3,
+  },
+];
