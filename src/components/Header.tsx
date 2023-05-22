@@ -8,7 +8,7 @@ const Header = () => {
   const handleNav = () => {
     setNav(!nav);
   };
-  // TODO: how to apply scroll-smooth?
+  
   return (
     <div className="bg-whitetext-slate-600 flex justify-between items-center h-24 w-full mx-auto px-4 md:px-32">
       <Link href="/">

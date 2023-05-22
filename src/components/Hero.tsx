@@ -11,7 +11,7 @@ const Hero = () => {
         {/* left Hi there */}
         <div className="md:pl-20 py-20 h-auto md:h-full flex flex-col justify-center gap-5 w-full md:w-3/5 text-center md:text-left">
           <p className="uppercase">Welcome to my world</p>
-          <h1 className="text-5xl md:text-7xl font-bold md:mb-7">
+          <h1 className="text-5xl md:text-7xl font-semibold md:mb-7">
             {/* eslint-disable-next-line react/no-unescaped-entities */}
             Hi, I'm Miku
           </h1>

@@ -9,7 +9,7 @@ const About = () => {
       {/* Section Container */}
       <div
         id="about"
-        className="border-2 text-slate-600 md:h-screen max-w-4xl mx-auto flex flex-col items-center relative overflow-hidden"
+        className="border-2 text-slate-600 md:h-fit max-w-4xl mx-auto flex flex-col items-center relative overflow-hidden"
       >
         <h2 className="font-bold text-5xl p-14 ">About Me</h2>
         {/* White container */}
@@ -23,7 +23,7 @@ const About = () => {
             <ul className="[&>*:not(:last-child)]:mb-6">
               {aboutMe.map(({ title, sentence, id }) => (
                 <li key={id}>
-                  <p className="text-lg md:text-2xl font-semibold mb-1">{title}</p>
+                  <p className="text-lg md:text-xl font-semibold mb-1">{title}</p>
                   <div className="w-11 h-1 mb-1 border-none bg-sky-200 rounded-full"></div>
                   <p className="text-lg">{sentence}</p>
                 </li>

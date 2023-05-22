@@ -9,15 +9,27 @@ const Skills = () => {
       className="border-2 text-slate-600 md:h-screen max-w-4xl mx-auto flex flex-col items-center relative overflow-hidden"
     >
       <h2 className="font-bold text-5xl p-14 ">Skills</h2>
-      {/* eslint-disable-next-line react/no-unescaped-entities */}
-      <p className="mb-4">These are the technologies I've worked with</p>
+      <div className="mb-5 w-4/5 text-center flex flex-col gap-2">
+        {/* eslint-disable-next-line react/no-unescaped-entities */}
+        <p className="">These are the technologies I've worked with</p>
+        <p className="">
+          I continue to learn further skill sets as a professional front-end
+          developer.
+        </p>
+      </div>
       <div className="border-2 w-4/5 mx-auto grid grid-cols-3 md:grid-cols-4 gap-8 md:gap-10 text-center">
         {techs.map(({ title, image, color, id }) => (
           <div
             key={id}
             className={`shadow-md hover:scale-105 duration-200 py-2 rounded-lg ${color}`}
           >
-            <Image src={image} alt={title} width={55} height={55} className="mx-auto" />
+            <Image
+              src={image}
+              alt={title}
+              width={55}
+              height={55}
+              className="mx-auto"
+            />
             <p className="mt-2">{title}</p>
           </div>
         ))}

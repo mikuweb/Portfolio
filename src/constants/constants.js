@@ -98,7 +98,7 @@ export const aboutMe = [
   {
     title: "Lifelong Learner",
     sentence:
-      "With a lifelong learner mindset, I fuel my growth as a web developer by continuously seeking knowledge and improvement.",
+      "With a lifelong learner mindset, I pursue my growth as a web developer by continuously seeking knowledge and improvement.",
     id: 0,
   },
   {
@@ -115,7 +115,7 @@ export const aboutMe = [
     },
   {
     title: "Love",
-    sentence: "Piano, fitness, exploration, reading, cooking, travel, and dogs",
+    sentence: "Piano, flower, fitness, reading, cooking, travel, and dogs",
     id: 3,
   },
 ];
