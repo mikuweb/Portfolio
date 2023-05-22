@@ -8,11 +8,11 @@ const Projects = () => {
     // Section container
     <div
       id="projects"
-      className="border-2 text-slate-600 h-auto max-w-4xl mx-auto flex flex-col items-center relative overflow-hidden"
+      className="border-2 bg-sky-50 text-slate-600 h-auto mx-auto flex flex-col items-center relative overflow-hidden"
     >
       <h2 className="font-bold text-5xl p-14 ">Projects</h2>
       {/* Cards container */}
-      <div className="border-2 w-4/5 md:w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div className="border-2 max-w-4xl w-4/5 md:w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
         {/* cards */}
         {projects.map((project) => (
           // Card

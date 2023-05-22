@@ -9,14 +9,14 @@ const About = () => {
       {/* Section Container */}
       <div
         id="about"
-        className="border-2 text-slate-600 md:h-fit max-w-4xl mx-auto flex flex-col items-center relative overflow-hidden"
+        className="bg-sky-50 border-2 text-slate-600 md:h-fit mx-auto flex flex-col items-center relative overflow-hidden"
       >
         <h2 className="font-bold text-5xl p-14 ">About Me</h2>
         {/* White container */}
-        <div className="border-2 h-auto max-w-4xl mx-auto flex flex-col md:flex-row items-center md:rounded-lg">
+        <div className="border-2 bg-white h-auto max-w-4xl mx-auto flex flex-col md:flex-row items-center md:rounded-lg">
           {/* Left Picture */}
-          <div className="w-1/2 md:w-2/5 md:p-7">
-            <Image src={AboutPic} alt="About Me Picture" className="" />
+          <div className="w-1/2 md:w-2/5">
+            <Image src={AboutPic} alt="About Me Picture" className="mt-5"/>
           </div>
           {/* Right About me */}
           <div className="border-2 p-4 w-full md:w-3/5 flex flex-col justify-center">

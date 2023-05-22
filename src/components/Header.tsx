@@ -10,7 +10,7 @@ const Header = () => {
   };
   
   return (
-    <div className="bg-whitetext-slate-600 flex justify-between items-center h-24 w-full mx-auto px-4 md:px-32">
+    <div className="bg-white text-slate-600 flex justify-between items-center h-16 w-full mx-auto px-4 md:px-16 lg:px-32">
       <Link href="/">
         <div className="w-full text-3xl font-bold">LOGO</div>
       </Link>
