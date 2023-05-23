@@ -11,6 +11,12 @@ const Header = () => {
     setNav(!nav);
   };
 
+  const handleLink = (section: string) => {
+    setNav(false);
+    let element = document.getElementById(section);
+    element?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="bg-stone-50 text-zinc-700 flex justify-between items-center h-24 w-full mx-auto px-4 md:px-16">
       <Link href="/">
@@ -43,13 +49,28 @@ const Header = () => {
         <div className="w-full m-4 pl-4">
           <Image src={logoImg} alt="Logo" className="w-20" />
         </div>
-        <li className="p-4 text-lg ">Projects</li>
-        <li className="p-4 text-lg ">Skills</li>
-        <li className="p-4 text-lg ">About</li>
+        <li
+          onClick={() => handleLink("projects")}
+          className="p-4 text-lg cursor-pointer"
+        >
+          Projects
+        </li>
+        <li
+          onClick={() => handleLink("skills")}
+          className="p-4 text-lg cursor-pointer"
+        >
+          Skills
+        </li>
+        <li
+          onClick={() => handleLink("about")}
+          className="p-4 text-lg cursor-pointer"
+        >
+          About
+        </li>
         <li className="py-4">
-          <span className="py-2 px-4 text-lg rounded-lg bg-gradient-to-br from-indigo-200 via-sky-200 to-pink-200">
+          <button className="py-2 px-4 text-lg rounded-lg bg-gradient-to-br from-indigo-200 via-sky-200 to-pink-200">
             Contact
-          </span>
+          </button>
         </li>
       </ul>
     </div>
