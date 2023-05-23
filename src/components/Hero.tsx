@@ -15,10 +15,12 @@ const Hero = () => {
               {/* eslint-disable-next-line react/no-unescaped-entities */}
               Hi, I'm Miku
             </h1>
-            <p className="text-xl md:text-3xl font-semibold text-sky-700">Front-End Web Developer</p>
+            <p className="text-xl md:text-3xl font-semibold text-sky-700">
+              Front-End Web Developer
+            </p>
             <p className="text-xl md:text-3xl md:mb-7">Based in Japan</p>
-            <button className="bg-gradient-to-br from-indigo-200 via-sky-200 to-pink-200 hover:scale-105 w-52 md:w-60 text-lg md:text-2xl py-3 mx-auto md:m-0 rounded-lg">
-              Contact Me
+            <button className="bg-gradient-to-br from-indigo-200 via-sky-200 to-pink-200 hover:scale-105 hover:opacity-70 w-52 md:w-60 text-lg md:text-2xl py-3 mx-auto md:m-0 rounded-lg">
+              <a href="mailto:mikukawata.224@gmail.com">Contact Me</a>
             </button>
           </div>
           {/* Right Picture */}

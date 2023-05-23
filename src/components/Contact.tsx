@@ -46,7 +46,7 @@ const Contact = () => {
           </div>
           {/* Email Button */}
           <button className="bg-stone-50 hover:bg-opacity-70 hover:scale-105 text-zinc-700 text-lg md:text-2xl font-semibold w-52 md:w-60 py-3 mx-auto rounded-lg">
-            Contact Me
+          <a href="mailto:mikukawata.224@gmail.com">Contact Me</a>
           </button>
         </div>
       </div>

@@ -7,36 +7,43 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 const Header = () => {
   const [nav, setNav] = useState(false);
 
-  const handleNav = () => {
+  const handleHamburger = () => {
     setNav(!nav);
   };
 
-  const handleLink = (section: string) => {
-    setNav(false);
+  const handleLink = (section: string, screen: string) => {
+    screen === "small" && setNav(false);
+
     let element = document.getElementById(section);
     element?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <div className="bg-stone-50 text-zinc-700 flex justify-between items-center h-24 w-full mx-auto px-4 md:px-16">
-      <Link href="/">
+      <div>
         <Image src={logoImg} alt="Logo" className="w-24 md:w-36" />
-      </Link>
+      </div>
       <ul className="hidden md:flex">
-        <li className="py-2 px-4">
-          <Link href="#projects">Projects</Link>
+        <li
+          className="py-2 px-4 cursor-pointer hover:opacity-70"
+          onClick={() => handleLink("projects", "large")}
+        >
+          Projects
         </li>
-        <li className="py-2 px-4">
-          <Link href="#skills">Skills</Link>
+        <li className="py-2 px-4 cursor-pointer hover:opacity-70" onClick={() => handleLink("skills", "large")}>
+          Skills
         </li>
-        <li className="py-2 px-4">
-          <Link href="#about">About Me</Link>
+        <li className="py-2 px-4 cursor-pointer hover:opacity-70" onClick={() => handleLink("about", "large")}>
+          About Me
         </li>
-        <li className="py-2 px-4 rounded-lg bg-gradient-to-br from-indigo-200 via-sky-200 to-pink-200">
-          <Link href="#contact">Contact</Link>
+        <li
+          className="py-2 px-4 rounded-lg bg-gradient-to-br from-indigo-200 via-sky-200 to-pink-200  cursor-pointer hover:opacity-70"
+          onClick={() => handleLink("contact", "large")}
+        >
+          Contact
         </li>
       </ul>
-      <div onClick={handleNav} className="block md:hidden">
+      <div onClick={handleHamburger} className="block md:hidden">
         {nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
       </div>
       <ul
@@ -50,25 +57,25 @@ const Header = () => {
           <Image src={logoImg} alt="Logo" className="w-20" />
         </div>
         <li
-          onClick={() => handleLink("projects")}
+          onClick={() => handleLink("projects", "small")}
           className="p-4 text-lg cursor-pointer"
         >
           Projects
         </li>
         <li
-          onClick={() => handleLink("skills")}
+          onClick={() => handleLink("skills", "small")}
           className="p-4 text-lg cursor-pointer"
         >
           Skills
         </li>
         <li
-          onClick={() => handleLink("about")}
+          onClick={() => handleLink("about", "small")}
           className="p-4 text-lg cursor-pointer"
         >
           About
         </li>
         <li className="py-4">
-          <button className="py-2 px-4 text-lg rounded-lg bg-gradient-to-br from-indigo-200 via-sky-200 to-pink-200">
+          <button onClick={() => handleLink("contact", "small")} className="py-2 px-4 text-lg rounded-lg bg-gradient-to-br from-indigo-200 via-sky-200 to-pink-200">
             Contact
           </button>
         </li>
