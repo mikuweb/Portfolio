@@ -6,7 +6,7 @@ const Contact = () => {
     <>
       <div
         id="contact"
-        className="border-2 bg-[#507888] text-stone-50 md:h-fit w-full mx-auto flex flex-col items-center text-center overflow-hidden"
+        className="bg-[#507888] text-stone-50 md:h-fit w-full mx-auto flex flex-col items-center text-center overflow-hidden"
       >
         <h2 className="font-bold text-5xl p-14 ">Contact</h2>
         {/* Contents Container */}
