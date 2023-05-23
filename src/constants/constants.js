@@ -1,8 +1,10 @@
+import portfolioPic from "../../public/images/portfolio.png";
+
 export const projects = [
   {
     title: "Feel Your Achievement",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "This web application is being constructed...",
     image: "/images/1.png",
     tags: ["React", "Next.js", "Tailwind"],
     source: "https://google.com",
@@ -12,7 +14,7 @@ export const projects = [
   {
     title: "Pokémon App",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "This web application is being constructed...",
     image: "/images/2.png",
     tags: ["React", "Next.js", "Tailwind"],
     source: "https://google.com",
@@ -22,8 +24,8 @@ export const projects = [
   {
     title: "Portfolio",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image: "/images/3.jpg",
+      "This portfolio website. It was used 'React with TypeScript', 'Next.js' and 'Tailwind' for styling.",
+    image: portfolioPic,
     tags: ["React", "Next.js", "Tailwind"],
     source: "https://google.com",
     visit: "https://google.com",

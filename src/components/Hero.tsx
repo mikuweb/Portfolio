@@ -7,7 +7,7 @@ const Hero = () => {
     <>
       {/* Section Container */}
       <div className="bg-stone-50 text-zinc-700 overflow-hidden">
-        <div className="bg-white h-auto md:h-[90vh] md:mt-10 max-w-4xl mx-auto flex flex-col md:flex-row items-center rounded-lg">
+        <div className="bg-white h-auto md:h-[90vh] max-w-4xl mx-auto flex flex-col md:flex-row items-center rounded-lg">
           {/* left Hi there */}
           <div className="md:pl-20 py-20 h-auto md:h-full flex flex-col justify-center gap-5 w-full md:w-3/5 text-center md:text-left">
             <p className="uppercase">Welcome to my world</p>

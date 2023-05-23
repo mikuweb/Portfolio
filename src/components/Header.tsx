@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logoImg from "../../public/images/logo_4_circle.png";
+import logoImg from "../../public/images/logo_4.png";
 import Link from "next/link";
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
@@ -43,7 +43,7 @@ const Header = () => {
           Contact
         </li>
       </ul>
-      <div onClick={handleHamburger} className="block md:hidden">
+      <div onClick={handleHamburger} className="block md:hidden cursor-pointer">
         {nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
       </div>
       <ul

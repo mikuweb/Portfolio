@@ -2,6 +2,7 @@ import React from "react";
 import { projects } from "../constants/constants";
 import { AiOutlineLink, AiFillGithub } from "react-icons/ai";
 import Link from "next/link";
+import Image from "next/image";
 
 const Projects = () => {
   return (
@@ -18,10 +19,10 @@ const Projects = () => {
           // Card
           <div
             key={project.id}
-            className="h-fit bg-white rounded-lg shadow-lg shadow-stone-200 flex-col items-center"
+            className="h-fit max-w-sm bg-white rounded-lg shadow-lg shadow-stone-300 flex-col items-center"
           >
-            <div className="duration-200 h-60 bg-slate-200 rounded-t-lg">
-              <span className="">{project.image}</span>
+            <div className="border-b border-stone-300 h-fit rounded-t-lg">
+              <Image className="mx-auto" src={project.image} alt={project.title} width={400} height={400}/>
             </div>
             {/* Contents */}
             <div className="p-5 md:p-7 gap-3 flex flex-col items-center">
@@ -31,7 +32,7 @@ const Projects = () => {
               <div className="font-bold">Stack</div>
               <div className="w-full flex justify-around">
                 {project.tags.map((entry, index) => (
-                  <div key={index}>{entry}</div>
+                  <div key={index} className="py-1 px-4 border border-stone-300 rounded-full">{entry}</div>
                 ))}
               </div>
               <div className="flex gap-3">

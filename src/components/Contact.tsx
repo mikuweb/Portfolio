@@ -27,21 +27,15 @@ const Contact = () => {
           <div className="text-stone-50 flex justify-center items-center">
             <a
               className="transition duration-300 ease-in-out rounded-full p-2 hover:opacity-70 cursor-pointer"
-              href="https://google.com"
+              href="https://github.com/mikuweb"
             >
               <AiFillGithub size="3rem" />
             </a>
             <a
               className="transition duration-300 ease-in-out rounded-full p-2 hover:opacity-70 cursor-pointer"
-              href="https://google.com"
+              href="#"
             >
               <AiFillLinkedin size="3rem" />
-            </a>
-            <a
-              className="transition duration-300 ease-in-out rounded-full p-2 hover:opacity-70 cursor-pointer"
-              href="https://google.com"
-            >
-              <AiFillInstagram size="3rem" />
             </a>
           </div>
           {/* Email Button */}
