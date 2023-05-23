@@ -7,7 +7,7 @@ interface LayoutProps {
 }
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div className="max-w-7xl w-full m-auto">
+    <div className=" max-w-7xl w-full m-auto">
       <Header />
       <main>{children}</main>
       <Footer />

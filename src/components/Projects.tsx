@@ -8,25 +8,25 @@ const Projects = () => {
     // Section container
     <div
       id="projects"
-      className="border-2 bg-sky-50 text-slate-600 h-auto mx-auto flex flex-col items-center relative overflow-hidden"
+      className="bg-stone-50 text-zinc-700 h-auto mx-auto flex flex-col items-center relative overflow-hidden"
     >
       <h2 className="font-bold text-5xl p-14 ">Projects</h2>
       {/* Cards container */}
-      <div className="border-2 max-w-4xl w-4/5 md:w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div className="max-w-4xl w-4/5 md:w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 mb-10">
         {/* cards */}
         {projects.map((project) => (
           // Card
           <div
             key={project.id}
-            className="border-2 h-fit bg-white rounded-lg shadow-lg flex-col items-center"
+            className="h-fit bg-white rounded-lg shadow-lg shadow-stone-200 flex-col items-center"
           >
-            <div className="border-2 duration-200 hover:scale-105 h-60 bg-slate-200 rounded-t-lg">
+            <div className="duration-200 h-60 bg-slate-200 rounded-t-lg">
               <span className="">{project.image}</span>
             </div>
             {/* Contents */}
-            <div className="border-2 p-5 md:p-7 gap-3 flex flex-col items-center">
+            <div className="p-5 md:p-7 gap-3 flex flex-col items-center">
               <p className="text-2xl font-bold">{project.title}</p>
-              <span className="w-12 h-1 my-3 border-none bg-sky-200 rounded-full"></span>
+              <span className="w-12 h-1 my-3 border-none bg-sky-100 rounded-full"></span>
               <p>{project.description}</p>
               <div className="font-bold">Stack</div>
               <div className="w-full flex justify-around">
