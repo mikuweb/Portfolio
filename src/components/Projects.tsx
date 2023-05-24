@@ -30,9 +30,9 @@ const Projects = () => {
               <span className="w-12 h-1 my-3 border-none bg-sky-100 rounded-full"></span>
               <p>{project.description}</p>
               <div className="font-bold">Stack</div>
-              <div className="w-full flex justify-around">
+              <div className="w-full grid grid-cols-3 gap-2">
                 {project.tags.map((entry, index) => (
-                  <div key={index} className="py-1 px-4 border border-stone-300 rounded-full">{entry}</div>
+                  <div key={index} className="py-1 px-1 text-center border border-stone-300 rounded-full">{entry}</div>
                 ))}
               </div>
               <div className="flex gap-3">

@@ -1,4 +1,6 @@
 import portfolioPic from "../../public/images/portfolio.png";
+import pokemonAppPic from "../../public/images/pokemon_app.png";
+
 
 export const projects = [
   {
@@ -6,7 +8,7 @@ export const projects = [
     description:
       "This web application is being constructed...",
     image: "/images/1.png",
-    tags: ["React", "Next.js", "Tailwind"],
+    tags: ["React", "TypeScript", "Next.js", "Tailwind"],
     source: "https://google.com",
     visit: "https://google.com",
     id: 0,
@@ -15,8 +17,8 @@ export const projects = [
     title: "Pokémon App",
     description:
       "This web application is being constructed...",
-    image: "/images/2.png",
-    tags: ["React", "Next.js", "Tailwind"],
+    image: pokemonAppPic,
+    tags: ["React", "TypeScript", "Next.js", "Tailwind"],
     source: "https://google.com",
     visit: "https://google.com",
     id: 1,
