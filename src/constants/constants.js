@@ -21,7 +21,7 @@ export const projects = [
     tags: ["React", "TypeScript", "Next.js", "Tailwind"],
     source: "https://google.com",
     visit: "https://google.com",
-    id: 1,
+    id: 1,git
   },
   {
     title: "Portfolio",
