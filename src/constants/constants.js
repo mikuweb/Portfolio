@@ -29,8 +29,8 @@ export const projects = [
       "This portfolio website. It was used 'React with TypeScript', 'Next.js' and 'Tailwind' for styling.",
     image: portfolioPic,
     tags: ["React", "Next.js", "Tailwind"],
-    source: "https://google.com",
-    visit: "https://google.com",
+    source: "https://github.com/mikuweb/Portfolio/tree/main",
+    visit: "https://miku-kawata-portfolio.vercel.app/",
     id: 2,
   },
 ];
