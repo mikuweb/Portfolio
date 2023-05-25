@@ -2,13 +2,10 @@ import portfolioPic from "../../public/images/portfolio.png";
 import pokemonAppPic from "../../public/images/pokemon_app.png";
 import fyaPic from "../../public/images/fya.png";
 
-
-
 export const projects = [
   {
     title: "Feel Your Achievement",
-    description:
-      "This web application is being constructed...",
+    description: "This web application is being constructed...",
     image: fyaPic,
     tags: ["React", "TypeScript", "Next.js", "Tailwind"],
     source: "https://github.com/mikuweb/Feel_Your_Achievement",
@@ -17,8 +14,7 @@ export const projects = [
   },
   {
     title: "Pokémon App",
-    description:
-      "This web application is being constructed...",
+    description: "This web application is being constructed...",
     image: pokemonAppPic,
     tags: ["React", "TypeScript", "Next.js", "Tailwind"],
     source: "https://github.com/mikuweb/Pokemon-App",
@@ -66,7 +62,7 @@ export const techs = [
     title: "Tailwind",
     image: "/images/tailwind_icon.svg",
     style: "shadow-cyan-500",
-    iconColor:"shadow-cyan-500",
+    iconColor: "shadow-cyan-500",
     id: 4,
   },
   {
@@ -79,7 +75,7 @@ export const techs = [
     title: "TypeScript",
     image: "/images/typescript_icon.svg",
     style: "shadow-sky-600",
-    iconColor:"shadow-sky-600",
+    iconColor: "shadow-sky-600",
     id: 6,
   },
   {
@@ -116,17 +112,17 @@ export const aboutMe = [
     id: 0,
   },
   {
-    title: "Exceptional Communicator",
+    title: "Excellent Communicator",
     sentence:
       "Years of sales, secretarial, and customer service experience honed my communication skills.",
-      id: 1,
-    },
+    id: 1,
+  },
   {
     title: "Life Adventurer",
     sentence:
       "I've traveled and lived in various places, embracing diverse experiences.",
-      id: 2,
-    },
+    id: 2,
+  },
   {
     title: "Love",
     sentence: "Piano, flower, fitness, reading, cooking, travel, and dogs",
