@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { projects } from "../constants/constants";
 import { AiOutlineLink, AiFillGithub } from "react-icons/ai";
 import Link from "next/link";
 import Image from "next/image";
+// import WOW from "wowjs"
 
 const Projects = () => {
+  // useEffect(() => {
+  //   new WOW().init();
+  // }, []);
+
   return (
     // Section container
     <div
@@ -13,13 +18,13 @@ const Projects = () => {
     >
       <h2 className="font-bold text-5xl p-14 ">Projects</h2>
       {/* Cards container */}
-      <div className="max-w-4xl w-4/5 md:w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 mb-10">
+      <div className="max-w-4xl w-4/5 md:w-full mx-auto grid grid-cols-1 md:grid-cols-2 mb-10">
         {/* cards */}
         {projects.map((project) => (
           // Card
           <div
             key={project.id}
-            className="h-fit max-w-sm bg-white rounded-lg shadow-lg shadow-stone-300 flex-col items-center"
+            className="h-fit mx-auto max-w-sm bg-white rounded-lg shadow-lg shadow-stone-300 flex-col items-center mb-10"
           >
             <div className="border-b border-stone-300 h-fit rounded-t-lg">
               <Image

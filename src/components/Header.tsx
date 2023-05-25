@@ -1,6 +1,5 @@
 import Image from "next/image";
 import logoImg from "../../public/images/logo_4.png";
-import Link from "next/link";
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
@@ -21,7 +20,11 @@ const Header = () => {
   return (
     <div className="bg-stone-50 text-zinc-700 flex justify-between items-center h-24 w-full mx-auto px-4 md:px-16">
       <div>
-        <Image src={logoImg} alt="Logo" className="w-24 md:w-36" />
+        <Image
+          src={logoImg}
+          alt="Logo"
+          className="w-24 md:w-36"
+        />
       </div>
       <ul className="hidden md:flex">
         <li
@@ -30,10 +33,16 @@ const Header = () => {
         >
           Projects
         </li>
-        <li className="py-2 px-4 cursor-pointer hover:opacity-70" onClick={() => handleLink("skills", "large")}>
+        <li
+          className="py-2 px-4 cursor-pointer hover:opacity-70"
+          onClick={() => handleLink("skills", "large")}
+        >
           Skills
         </li>
-        <li className="py-2 px-4 cursor-pointer hover:opacity-70" onClick={() => handleLink("about", "large")}>
+        <li
+          className="py-2 px-4 cursor-pointer hover:opacity-70"
+          onClick={() => handleLink("about", "large")}
+        >
           About Me
         </li>
         <li
@@ -75,7 +84,10 @@ const Header = () => {
           About
         </li>
         <li className="py-4">
-          <button onClick={() => handleLink("contact", "small")} className="py-2 px-4 text-lg rounded-lg bg-gradient-to-br from-indigo-200 via-sky-200 to-pink-200">
+          <button
+            onClick={() => handleLink("contact", "small")}
+            className="py-2 px-4 text-lg rounded-lg bg-gradient-to-br from-indigo-200 via-sky-200 to-pink-200"
+          >
             Contact
           </button>
         </li>

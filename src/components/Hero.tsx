@@ -25,7 +25,7 @@ const Hero = () => {
             </button>
           </div>
           {/* Right Picture */}
-          <div className="animate__animated animate__fadeInRight w-1/2 md:w-2/5 md:pr-20 ">
+          <div className="animate__animated animate__fadeIn animate__slow	3s w-1/2 md:w-2/5 md:pr-20 ">
             <Image
               src={profilePic}
               alt="Profile Picture"
