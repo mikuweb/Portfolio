@@ -22,7 +22,13 @@ const Projects = () => {
             className="h-fit max-w-sm bg-white rounded-lg shadow-lg shadow-stone-300 flex-col items-center"
           >
             <div className="border-b border-stone-300 h-fit rounded-t-lg">
-              <Image className="mx-auto" src={project.image} alt={project.title} width={400} height={400}/>
+              <Image
+                className="mx-auto"
+                src={project.image}
+                alt={project.title}
+                width={400}
+                height={400}
+              />
             </div>
             {/* Contents */}
             <div className="p-5 md:p-7 gap-3 flex flex-col items-center">
@@ -32,7 +38,12 @@ const Projects = () => {
               <div className="font-bold">Stack</div>
               <div className="w-full grid grid-cols-3 gap-2">
                 {project.tags.map((entry, index) => (
-                  <div key={index} className="py-1 px-1 text-center border border-stone-300 rounded-full">{entry}</div>
+                  <div
+                    key={index}
+                    className="py-1 px-1 text-center border border-stone-300 rounded-full"
+                  >
+                    {entry}
+                  </div>
                 ))}
               </div>
               <div className="flex gap-3">
