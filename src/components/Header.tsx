@@ -18,7 +18,7 @@ const Header = () => {
   };
 
   return (
-    <div className="bg-stone-50 text-zinc-700 flex justify-between items-center h-24 w-full mx-auto px-4 md:px-16">
+    <div className="fixed top-0 left-0 z-50 bg-stone-50/80 text-zinc-700 flex justify-between items-center h-24 w-full mx-auto px-4 md:px-16">
       <div>
         <Image
           src={logoImg}

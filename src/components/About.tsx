@@ -9,7 +9,7 @@ const About = () => {
       {/* Section Container */}
       <div
         id="about"
-        className="bg-stone-50 text-zinc-700 md:h-fit mx-auto flex flex-col items-center relative overflow-hidden"
+        className="bg-stone-50 text-zinc-700 md:h-fit mx-auto flex flex-col items-center overflow-hidden"
       >
         <h2 className="font-bold text-5xl p-14 ">About Me</h2>
         {/* White container */}

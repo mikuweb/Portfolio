@@ -14,7 +14,7 @@ const Projects = () => {
     // Section container
     <div
       id="projects"
-      className="bg-stone-50 text-zinc-700 h-auto mx-auto flex flex-col items-center relative overflow-hidden"
+      className="bg-stone-50 text-zinc-700 h-auto mx-auto flex flex-col items-center overflow-hidden"
     >
       <h2 className="font-bold text-5xl p-14 ">Projects</h2>
       {/* Cards container */}
@@ -39,7 +39,7 @@ const Projects = () => {
             <div className="p-5 md:p-7 gap-3 flex flex-col items-center">
               <p className="text-2xl font-bold">{project.title}</p>
               <span className="w-12 h-1 my-3 border-none bg-sky-100 rounded-full"></span>
-              <p>{project.description}</p>
+              <p className="text-center">{project.description}</p>
               <div className="font-bold">Stack</div>
               <div className="w-full grid grid-cols-3 gap-2">
                 {project.tags.map((entry, index) => (
