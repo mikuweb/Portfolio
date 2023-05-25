@@ -14,7 +14,7 @@ const Projects = () => {
     // Section container
     <div
       id="projects"
-      className="bg-stone-50 text-zinc-700 h-auto mx-auto flex flex-col items-center overflow-hidden"
+      className=" bg-stone-50 text-zinc-700 h-auto mx-auto flex flex-col items-center overflow-hidden"
     >
       <h2 className="font-bold text-5xl p-14 ">Projects</h2>
       {/* Cards container */}
@@ -28,7 +28,7 @@ const Projects = () => {
           >
             <div className="border-b border-stone-300 h-fit rounded-t-lg">
               <Image
-                className="mx-auto"
+                className="mx-auto rounded-t-lg"
                 src={project.image}
                 alt={project.title}
                 width={400}
