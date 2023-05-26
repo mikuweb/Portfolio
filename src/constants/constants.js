@@ -5,11 +5,12 @@ import fyaPic from "../../public/images/fya.png";
 export const projects = [
   {
     title: "Feel Your Achievement",
-    description: "This web application is being constructed...",
+    description:
+      "Habit Tracking Web app. By managing your daily habits, it will help you get closer to your goals and you can feel a sense of achievement. Also, the stopwatch and timer functions enable time management.",
     image: fyaPic,
     tags: ["React", "TypeScript", "Next.js", "Tailwind"],
     source: "https://github.com/mikuweb/Feel_Your_Achievement",
-    visit: "https://google.com",
+    visit: "https://feel-your-achievement.vercel.app/",
     id: 0,
   },
   {

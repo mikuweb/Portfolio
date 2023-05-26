@@ -3,7 +3,6 @@ import logoImg from "../../public/images/logo_4.png";
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
-// TODO * Not to cover section title when page is scrolled
 const Header = () => {
   const [nav, setNav] = useState(false);
 
