@@ -62,26 +62,26 @@ const Header = () => {
           <Image src={logoImg} alt="Logo" className="w-20" />
         </div>
         <li
-          onClick={() => handleLink("projects", "small")}
+          onClick={() => handleLink("projects")}
           className="p-4 text-lg cursor-pointer"
         >
           Projects
         </li>
         <li
-          onClick={() => handleLink("skills", "small")}
+          onClick={() => handleLink("skills")}
           className="p-4 text-lg cursor-pointer"
         >
           Skills
         </li>
         <li
-          onClick={() => handleLink("about", "small")}
+          onClick={() => handleLink("about")}
           className="p-4 text-lg cursor-pointer"
         >
           About
         </li>
         <li className="py-4">
           <button
-            onClick={() => handleLink("contact", "small")}
+            onClick={() => handleLink("contact")}
             className="py-2 px-4 text-lg rounded-lg bg-gradient-to-br from-indigo-200 via-sky-200 to-pink-200"
           >
             Contact
