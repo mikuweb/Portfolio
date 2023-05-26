@@ -10,44 +10,40 @@ const Header = () => {
     setNav(!nav);
   };
 
-  const handleLink = (section: string, screen: string) => {
-    screen === "small" && setNav(false);
+  const handleLink = (section: string) => {
+    nav == true && setNav(false);
 
     let element = document.getElementById(section);
-    element?.scrollIntoView({ behavior: "smooth" });
+    element?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
   return (
-    <div className="bg-stone-50 text-zinc-700 flex justify-between items-center h-24 w-full mx-auto px-4 md:px-16">
+    <div className="fixed top-0 left-0 z-50 bg-stone-50/80 text-zinc-700 flex justify-between items-center h-24 w-full mx-auto px-4 md:px-16">
       <div>
-        <Image
-          src={logoImg}
-          alt="Logo"
-          className="w-24 md:w-36"
-        />
+        <Image src={logoImg} alt="Logo" className="w-24 md:w-36" />
       </div>
       <ul className="hidden md:flex">
         <li
           className="py-2 px-4 cursor-pointer hover:opacity-70"
-          onClick={() => handleLink("projects", "large")}
+          onClick={() => handleLink("projects")}
         >
           Projects
         </li>
         <li
           className="py-2 px-4 cursor-pointer hover:opacity-70"
-          onClick={() => handleLink("skills", "large")}
+          onClick={() => handleLink("skills")}
         >
           Skills
         </li>
         <li
           className="py-2 px-4 cursor-pointer hover:opacity-70"
-          onClick={() => handleLink("about", "large")}
+          onClick={() => handleLink("about")}
         >
           About Me
         </li>
         <li
           className="py-2 px-4 rounded-lg bg-gradient-to-br from-indigo-200 via-sky-200 to-pink-200  cursor-pointer hover:opacity-70"
-          onClick={() => handleLink("contact", "large")}
+          onClick={() => handleLink("contact")}
         >
           Contact
         </li>
@@ -66,26 +62,26 @@ const Header = () => {
           <Image src={logoImg} alt="Logo" className="w-20" />
         </div>
         <li
-          onClick={() => handleLink("projects", "small")}
+          onClick={() => handleLink("projects")}
           className="p-4 text-lg cursor-pointer"
         >
           Projects
         </li>
         <li
-          onClick={() => handleLink("skills", "small")}
+          onClick={() => handleLink("skills")}
           className="p-4 text-lg cursor-pointer"
         >
           Skills
         </li>
         <li
-          onClick={() => handleLink("about", "small")}
+          onClick={() => handleLink("about")}
           className="p-4 text-lg cursor-pointer"
         >
           About
         </li>
         <li className="py-4">
           <button
-            onClick={() => handleLink("contact", "small")}
+            onClick={() => handleLink("contact")}
             className="py-2 px-4 text-lg rounded-lg bg-gradient-to-br from-indigo-200 via-sky-200 to-pink-200"
           >
             Contact

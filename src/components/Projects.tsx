@@ -14,7 +14,7 @@ const Projects = () => {
     // Section container
     <div
       id="projects"
-      className="bg-stone-50 text-zinc-700 h-auto mx-auto flex flex-col items-center relative overflow-hidden"
+      className=" bg-stone-50 text-zinc-700 h-auto mx-auto flex flex-col items-center overflow-hidden"
     >
       <h2 className="font-bold text-5xl p-14 ">Projects</h2>
       {/* Cards container */}
@@ -28,7 +28,7 @@ const Projects = () => {
           >
             <div className="border-b border-stone-300 h-fit rounded-t-lg">
               <Image
-                className="mx-auto"
+                className="mx-auto rounded-t-lg"
                 src={project.image}
                 alt={project.title}
                 width={400}
@@ -39,7 +39,7 @@ const Projects = () => {
             <div className="p-5 md:p-7 gap-3 flex flex-col items-center">
               <p className="text-2xl font-bold">{project.title}</p>
               <span className="w-12 h-1 my-3 border-none bg-sky-100 rounded-full"></span>
-              <p>{project.description}</p>
+              <p className="">{project.description}</p>
               <div className="font-bold">Stack</div>
               <div className="w-full grid grid-cols-3 gap-2">
                 {project.tags.map((entry, index) => (
@@ -53,16 +53,18 @@ const Projects = () => {
               </div>
               <div className="flex gap-3">
                 <Link
-                  className="text-slate-500 transition duration-200 hover:scale-110 rounded-full p-2 cursor-pointer"
+                  className="flex flex-col items-center text-slate-500 transition duration-200 hover:scale-110 [&>*:nth-child(2)]:hover:opacity-100 rounded-full p-2 cursor-pointer"
                   href={project.source}
                 >
-                  <AiFillGithub size="2rem" />
+                  <AiFillGithub size="2rem" className="" />
+                  <span className="text-xs opacity-0 transition">Github</span>
                 </Link>
                 <Link
-                  className="text-slate-500 transition duration-200 hover:scale-110 rounded-full p-2 cursor-pointer"
+                  className="flex flex-col items-center text-slate-500 transition duration-200 hover:scale-110 [&>*:nth-child(2)]:hover:opacity-100 rounded-full p-2 cursor-pointer"
                   href={project.visit}
                 >
                   <AiOutlineLink size="2rem" />
+                  <span className="text-xs opacity-0 transition">Visit</span>
                 </Link>
               </div>
             </div>

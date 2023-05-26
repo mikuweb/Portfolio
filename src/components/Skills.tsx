@@ -6,7 +6,7 @@ const Skills = () => {
   return (
     <div
       id="skills"
-      className="bg-stone-50 text-zinc-700 md:h-screen w-full mx-auto flex flex-col items-center relative overflow-hidden"
+      className="bg-stone-50 text-zinc-700 md:h-screen w-full mx-auto flex flex-col items-center overflow-hidden"
     >
       <h2 className="font-bold text-5xl p-14 ">Skills</h2>
       <div className="mb-5 w-4/5 text-center flex flex-col gap-2">
