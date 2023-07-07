@@ -16,7 +16,7 @@ const Projects = () => {
       id="projects"
       className=" bg-stone-50 text-zinc-700 h-auto mx-auto flex flex-col items-center overflow-hidden"
     >
-      <h2 className="font-bold text-5xl p-14 ">Projects</h2>
+      <h2 className="font-bold text-5xl p-14 ">Projects</h2>{" "}
       {/* Cards container */}
       <div className="max-w-4xl w-4/5 md:w-full mx-auto grid grid-cols-1 md:grid-cols-2 mb-10">
         {/* cards */}

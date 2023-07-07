@@ -15,11 +15,12 @@ export const projects = [
   },
   {
     title: "Pokémon App",
-    description: "This web application is being constructed...",
+    description:
+      "Pokémon application with Pokémon name guessing game and Pokémon list. It was used 'React with TypeScript', 'Next.js' and 'Tailwind' for styling.",
     image: pokemonAppPic,
     tags: ["React", "TypeScript", "Next.js", "Tailwind"],
     source: "https://github.com/mikuweb/Pokemon-App",
-    visit: "https://google.com",
+    visit: "https://pokemon-app-nine-zeta.vercel.app/",
     id: 1,
   },
   {
