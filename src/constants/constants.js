@@ -104,6 +104,12 @@ export const techs = [
     style: "shadow-pink-400",
     id: 10,
   },
+  {
+    title: "Recoil",
+    image: "/images/recoil_icon.svg",
+    style: "shadow-sky-600",
+    id: 11,
+  },
 ];
 
 export const aboutMe = [
