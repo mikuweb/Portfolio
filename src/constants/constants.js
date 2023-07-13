@@ -1,6 +1,7 @@
 import portfolioPic from "../../public/images/portfolio.png";
 import pokemonAppPic from "../../public/images/pokemon_app.png";
 import fyaPic from "../../public/images/fya.png";
+import snsPic from "../../public/images/sns.png";
 
 export const projects = [
   {
@@ -18,10 +19,20 @@ export const projects = [
     description:
       "Pokémon application with Pokémon name guessing game and Pokémon list. It was used 'React with TypeScript', 'Next.js' and 'Tailwind' for styling.",
     image: pokemonAppPic,
-    tags: ["React", "TypeScript", "Next.js", "Tailwind"],
+    tags: ["Next.js", "TypeScript", "Tailwind"],
     source: "https://github.com/mikuweb/Pokemon-App",
     visit: "https://pokemon-app-nine-zeta.vercel.app/",
     id: 1,
+  },
+  {
+    title: "Simple SNS",
+    description:
+      "I created the front-end part with Next.js and TypeScript. It is connected to the backend by calling API.",
+    image: snsPic,
+    tags: ["Next.js", "TypeScript", "Recoil", "MUI"],
+    source: "https://github.com/mikuweb/",
+    visit: "https://simple-sns-next.vercel.app",
+    id: 2,
   },
   {
     title: "Portfolio",
@@ -31,7 +42,7 @@ export const projects = [
     tags: ["React", "Next.js", "Tailwind"],
     source: "https://github.com/mikuweb/Portfolio/tree/main",
     visit: "https://miku-kawata-portfolio.vercel.app/",
-    id: 2,
+    id: 3,
   },
 ];
 
