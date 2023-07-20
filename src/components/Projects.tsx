@@ -26,14 +26,16 @@ const Projects = () => {
             key={project.id}
             className="h-fit mx-auto max-w-sm bg-white rounded-lg shadow-lg shadow-stone-300 flex-col items-center mb-10"
           >
-            <div className="border-b border-stone-300 h-fit rounded-t-lg">
-              <Image
-                className="mx-auto rounded-t-lg"
-                src={project.image}
-                alt={project.title}
-                width={400}
-                height={400}
-              />
+            <div className="border-b border-stone-300 h-fit rounded-t-lg hover:scale-105 duration-200">
+              <Link href={project.visit}>
+                <Image
+                  className="mx-auto rounded-t-lg"
+                  src={project.image}
+                  alt={project.title}
+                  width={400}
+                  height={400}
+                />
+              </Link>
             </div>
             {/* Contents */}
             <div className="p-5 md:p-7 gap-3 flex flex-col items-center">

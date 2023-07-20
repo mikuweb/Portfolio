@@ -31,7 +31,7 @@ export const projects = [
     image: snsPic,
     tags: ["Next.js", "TypeScript", "Recoil", "MUI"],
     source: "https://github.com/mikuweb/",
-    visit: "https://simple-sns-next.vercel.app",
+    visit: "https://advanced-sns-next.vercel.app",
     id: 2,
   },
   {
