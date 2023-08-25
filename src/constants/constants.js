@@ -97,29 +97,29 @@ export const techs = [
     style: "shadow-gray-400",
     id: 7,
   },
-  {
-    title: "Node.js",
-    image: "/images/nodejs_icon.svg",
-    style: "shadow-green-600",
-    id: 8,
-  },
+  // {
+  //   title: "Node.js",
+  //   image: "/images/nodejs_icon.svg",
+  //   style: "shadow-green-600",
+  //   id: 8,
+  // },
   {
     title: "Figma",
     image: "/images/figma_icon.svg",
     style: "shadow-orange-500",
-    id: 9,
+    id: 8,
   },
   {
     title: "Sass/SCSS",
     image: "/images/sass_icon.svg",
     style: "shadow-pink-400",
-    id: 10,
+    id: 9,
   },
   {
     title: "Recoil",
     image: "/images/recoil_icon.svg",
     style: "shadow-sky-600",
-    id: 11,
+    id: 10,
   },
 ];
 
